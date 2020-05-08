@@ -1,0 +1,8 @@
+[package]
+name = "hpro-xyz"
+version = "0.1.0"
+authors = ["Clint.Network <me@clint.network>"]
+edition = "2018"
+
+[dependencies]
+iron = "*"
