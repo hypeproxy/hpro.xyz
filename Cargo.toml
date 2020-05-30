@@ -5,4 +5,7 @@ authors = ["Clint.Network <me@clint.network>"]
 edition = "2018"
 
 [dependencies]
-iron = "*"
+nickel = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
