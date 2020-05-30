@@ -1,0 +1,8 @@
+{
+  "name": "Hpro.xyz",
+  "description": "HypeProxy.io IP retriever.",
+  "repository": "https://github.com/hypeproxy/hpro.xyz",
+  "buildpacks": [{
+    "url": "emk/rust"
+  }]
+}
