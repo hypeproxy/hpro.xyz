@@ -9,9 +9,9 @@ use nickel::{Nickel, HttpRouter, MediaType};
 
 fn main() {
     let mut server = Nickel::new();
-    server.get("/ip", middleware!{ |req, mut res|
+    server.get("/", middleware!{ |req, mut res|
         res.set(MediaType::Json);
-        format!("{}", req.origin.remote_addr)
+        format!("{}", req.origin.remote_addr.ip())
     });
     server.get("/headers", middleware!{ |req, mut res|
         res.set(MediaType::Json);
