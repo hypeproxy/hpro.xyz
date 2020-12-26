@@ -1,6 +1,8 @@
 {
   "name": "Hpro.xyz",
   "description": "HypeProxy.io IP retriever.",
+  "logo": "https://avatars0.githubusercontent.com/u/63973043",
+  "website": "http://hypeproxy.io/",
   "repository": "https://github.com/hypeproxy/hpro.xyz",
   "buildpacks": [{
     "url": "emk/rust"
