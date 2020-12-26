@@ -2,7 +2,7 @@
 
 An HypeProxy.io's tool to find your own IP address and more informations.
 
-![](https://img.shields.io/badge/Made%20With-Rust-dea584)
+![](https://img.shields.io/badge/Made%20With-Flask-blue)
 ![](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
 
