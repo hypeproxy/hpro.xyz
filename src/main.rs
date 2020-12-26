@@ -6,8 +6,7 @@ extern crate serde_derive;
 
 use std::env;
 use nickel::{Nickel, HttpRouter, MediaType};
-use nickel::extensions::Redirect;
-use nickel::hyper::header::Location;
+use nickel::hyper::header::{Location, UserAgent};
 use nickel::hyper::status::StatusCode;
 
 fn main() {
@@ -22,7 +21,10 @@ fn main() {
     });
     server.get("/user-agent", middleware!{ |req, mut res|
         res.set(MediaType::Json);
-        format!("{:#?}", req.origin.headers)
+        match req.origin.headers.get::<UserAgent>() {
+            Some(r) => format!("{}", r),
+            None => format!("N/a")
+        }
     });
     server.get("/about", middleware!{ |_, mut res|
         res.set(StatusCode::TemporaryRedirect)
