@@ -23,5 +23,5 @@ fn main() {
     });
 
     let port = env::var("PORT").expect("Unable to run it on Heroku.");
-    server.listen(format!("127.0.0.1:{}", port)).expect("Unable to launch hpro.xyz.");
+    server.listen(format!("0.0.0.0:{}", port)).expect("Unable to launch hpro.xyz.");
 }
