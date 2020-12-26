@@ -5,6 +5,5 @@
   "website": "http://hypeproxy.io/",
   "repository": "https://github.com/hypeproxy/hpro.xyz",
   "buildpacks": [{
-    "url": "emk/rust"
   }]
 }
