@@ -13,17 +13,21 @@ fn main() {
     let mut server = Nickel::new();
     server.get("/", middleware!{ |req, mut res|
         res.set(MediaType::Json);
-        format!("{}", req.origin.remote_addr.ip())
+        match req.origin.headers.get::<Forwarded>() {
+            Some(r) => format!("{}", r),
+            None => format!("None")
+        }
+        // format!("{}", req.origin.remote_addr.ip())
     });
     server.get("/headers", middleware!{ |req, mut res|
         res.set(MediaType::Json);
-        format!("{:#?}", req.origin.headers)
+        format!("{:#?}", req.origin.headers.iter())
     });
     server.get("/user-agent", middleware!{ |req, mut res|
         res.set(MediaType::Json);
         match req.origin.headers.get::<UserAgent>() {
             Some(r) => format!("{}", r),
-            None => format!("N/a")
+            None => format!("None")
         }
     });
     server.get("/about", middleware!{ |_, mut res|
