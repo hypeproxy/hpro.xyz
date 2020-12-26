@@ -1,1 +1,1 @@
-web: ./target/release/hpro-xyz
+web: gunicorn app:app
