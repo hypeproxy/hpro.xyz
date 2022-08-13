@@ -1,6 +1,6 @@
 # hpro.xyz
 
-An HypeProxy.io's tool to find your own IP address and more informations.
+An HypeProxy.io's tool to get your IP address and much information.
 
 ![](https://img.shields.io/badge/Made%20With-Flask-blue)
 ![](https://img.shields.io/badge/license-MIT-lightgrey.svg)
