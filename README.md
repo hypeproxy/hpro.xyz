@@ -8,7 +8,7 @@ An HypeProxy.io's tool to get your IP address and much information.
 
 ### Get IP
 ```bash
-$ curl http://hpro.xyz/
+$ curl http://hpro.xyz/ip
 ```
 ```
 27.159.39.27
