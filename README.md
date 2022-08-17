@@ -2,13 +2,14 @@
 
 An HypeProxy.io's tool to get your IP address and much information.
 
-![](https://img.shields.io/badge/Made%20With-Flask-blue)
+![](https://img.shields.io/badge/Made%20With-NextJS-black)
 ![](https://img.shields.io/badge/license-MIT-lightgrey.svg)
+[![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/gqdl.svg)](https://betteruptime.com/?utm_source=status_badge)
 
 
 ### Get IP
 ```bash
-$ curl http://hpro.xyz/
+$ curl http://hpro.xyz/ip
 ```
 ```
 27.159.39.27
