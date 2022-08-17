@@ -7,7 +7,7 @@ const nextConfig = {
 		return [
 			{
 				source: '/',
-				destination: 'https://hypeproxy.io/ip',
+				destination: 'https://github.com/hypeproxy/hpro.xyz#hproxyz',
 				permanent: true
 			}
 		]
